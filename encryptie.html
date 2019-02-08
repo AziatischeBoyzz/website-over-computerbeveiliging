@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html lang="nl">
+		<head>
+			<title>Encryptie</title>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" type="text/css" href="mystyle.css">
+		</head>
+		<body>
+			<header>
+			<div class="header1">
+			<h1>Computerbeveiliging</h1></div>
+			</header>
+			
+			<nav>
+				<ul>
+				  <li><a href="index.html"><img src="home.png" alt="homepic" height="25" width="25"></a></li>
+				  <li><a href="antimalwaresoftware.html">Antimalwaresoftware</a></li>
+				  <li><a href="firewall.html">Firewall</a></li>
+				  <li><a href="encryptie.html">Encryptie</a></li>
+				  <li><a href="anoniemsurfen.html">Anoniem surfen</a></li>
+				  <li><a href="fysiekemaatregelen.html">Fysieke maatregelen</a></li>
+				  <li><a href="bit.html">NX-bit en XD-bit</a></li>
+				  <li><a href="bufferoverflow.html">Buffer-overflow</a></li>
+				  <li><a href="hardwareencryptie.html">Hardware encryptie</a></li>
+				  <li><a href="biometrischeherkenning.html">Biometrische herkenning</a></li>
+				  <li><a href="menselijkemaatregelen.html">Menselijke en organisatorische maatregelen</a></li>
+				  <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<section>
+			<header>
+			<div class="header2">
+			<h2>Encryptie</h2></div>
+			</header>
+			
+			<div class="paragraph">
+			<p>Er zijn 3 soorten manieren van encryptie; symmetrische cryptografie, asymmetrische cryptografie en cryptohashing.
+			</p>
+		
+			<h3>Symmetrische cryptografie</h3>
+			
+			<p>Bij symmetrische cryptografie gebruiken zender en ontvanger dezelfde sleutel. 
+			Die sleutel moet van tevoren uitgewisseld worden via een veilig kanaal, waarbij zender en ontvanger elkaars identiteit kunnen controleren en onderschepping van de sleutel door anderen niet mogelijk is.
+			Het gebruik van dezelfde sleutel wil niet altijd zeggen dat het coderen en het decoderen identiek zijn.
+			Symmetrische cryptografie is minder rekenintensief en sneller dan asymmetrische cryptografie waardoor het de voorkeur heeft voor grote bestanden of hoge datasnelheden.
+			</p>
+			
+			<h3>Asymmetrische cryptografie</h3>
+			
+			<p>Assymetrische cryptografie wordt ook wel <em>public key encryption</em> genoemd.		
+			Hierbij hebben zender en ontvanger elk een eigen set van twee sleutels, waarvan er één publiek is en een niet. Het is in theorie mogelijk, maar niet praktisch haalbaar, om de geheime sleutel uit de publieke sleutel af te leiden.
+			Berichten die met een publieke sleutel worden versleuteld, kunnen alleen met de geheime sleutel worden ontcijferd.<br>
+			Andersom geldt dit ook: informatie die is vercijferd met de geheime sleutel van iemand, kan alleen met de bijbehorende publieke sleutel worden ontcijferd. Dit laatste wordt gebruikt bij het digitaal ondertekenen van berichten: men heeft de zekerheid dat het bericht afkomstig is van degene die zich de afzender noemt.
+			De publieke sleutel mag aan iedereen bekend zijn en kan dus uitgewisseld worden over een onveilig kanaal zoals internet. 
+			Om een bericht te coderen en digitaal te ondertekenen, heeft de zender zijn eigen geheime sleutel nodig én de publieke sleutel van de ontvanger. 
+			Om het ontvangen bericht te decoderen en te verifiëren of de handtekening wel van de zender is, heeft de ontvanger zijn eigen geheime sleutel nodig én de publieke sleutel van de zender.
+			</p>
+						
+			<h3>Cryptohashing</h3>
+			
+			<p>
+			Cryptografische hashing is in strikte zin geen versleuteling, omdat bij hashing uit de verkregen hashcode de oorspronkelijke gegevens niet meer terug kunnen worden gehaald. 
+			Wel wordt bij hashing gebruikgemaakt van dezelfde technieken als bij versleuteling en vormt hashing ook vaak een onderdeel van versleutelingsprotocollen. 
+			Het verschil tussen hashing en encryptie is dus dat hashing maar 1 kant op kan en dat er bij encryptie twee kanten op gewerkt kan worden.
+			Voor een veilige hashcode geldt dat het onmogelijk moet zijn te achterhalen van welk blok gegevens de code is afgeleid, en verder moet het onmogelijk zijn om twee verschillende blokken gegevens te maken die dezelfde hashcode hebben. 
+			Hierdoor heeft een hashcode de eigenschappen van een digitale vingerafdruk.
+			</p></div>
+			</section>
+			
+			<div class="footer">
+			<footer>Gemaakt door Maurice Tjan en Menno ter Voort</footer></div>	
+		</body>
+	</html>

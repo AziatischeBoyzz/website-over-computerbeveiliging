@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<html lang="nl">
+		<head>
+			<title>Firewall</title>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" type="text/css" href="mystyle.css">
+		</head>
+		<body>
+			<header>
+			<div class="header1">
+			<h1>Computerbeveiliging</h1></div>
+			</header>
+			
+			<nav>
+				<ul>
+				  <li><a href="index.html"><img src="home.png" alt="homepic" height="25" width="25"></a></li>
+				  <li><a href="antimalwaresoftware.html">Antimalwaresoftware</a></li>
+				  <li><a href="firewall.html">Firewall</a></li>
+				  <li><a href="encryptie.html">Encryptie</a></li>
+				  <li><a href="anoniemsurfen.html">Anoniem surfen</a></li>
+				  <li><a href="fysiekemaatregelen.html">Fysieke maatregelen</a></li>
+				  <li><a href="bit.html">NX-bit en XD-bit</a></li>
+				  <li><a href="bufferoverflow.html">Buffer-overflow</a></li>
+				  <li><a href="hardwareencryptie.html">Hardware encryptie</a></li>
+				  <li><a href="biometrischeherkenning.html">Biometrische herkenning</a></li>
+				  <li><a href="menselijkemaatregelen.html">Menselijke en organisatorische maatregelen</a></li>
+				  <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<section>
+			<header>
+			<div class="header2">
+			<h2>Firewall</h2></div>
+			</header>
+			
+			<div class="paragraph">
+			<p>
+			Een firewall is gamaakt om ingaand en uitgaand verkeer te filteren en het verkeer dat niet toegestaan is of dat potentieel gevaarlijk is te blokkeren. 
+			Een firewall is een goede bescherming tegen crackers. 
+			Daarnaast kan een firewall spyware die verzamelde informatie naar zijn maker wil sturen of computerwormen die zich proberen te verspreiden opmerken.
+			</p>
+						
+			<h3>Firewall type's</h3>
+			
+			<h4>Packet filtering firewall</h4>
+			
+			<p>Een packet filtering firewall beschermt de netwerklaag van de TCP/IP-protocol-stack. De firewall bepaalt met een aantal regels of een IP-pakket wordt doorgelaten of tegengehouden.
+			De dingen waarmee het dan rekening houdt is de poort waar het naar toe moet en van welk ip-adres het komt. Deze regels worden opgesteld door de beheerder of de makevan de firewall.
+			Een packet filtering firewall beslist op basis van ip-header, dit werkt heel snel en is ook eenvoudig, maar het beschermt minder goed tegen virussen, spam en nog veel meer.
+			Gebruikers van de computer die zich achter de packet filtering firewall bevinden merken daar bijna niets van, behalve als de poortnummers die zij gebruiken worden tegengehouden.
+			Een packet filtering firewall kan bijvoorbeeld al het verkeer naar de telnetpoort tegenhouden. Aan de andere kant verbiedt de firewall niet dat het protocol van de telnetpoort een andere poort gebruikt.
+			</p>
+			
+			<h4>Application layer firewall</h4>
+			
+			<p>Een application layer firewall grijpt in op de applicatielaag van de TCP/IP-protocolstack.
+			Een stukje software of pakketjes worden doorgelaten of tegengehouden door een ondersteund protocol.
+			Deze software bestaat uit meer dan een aantal regels. In tegen stelling tot een packet filtering firewall kan de application layer firewall beter beschermen tegen virussen ed.
+			Een application layer firewall is ook complexer dan de packet filtering firewall. Ook kost het meer resources om te bepalen of het door mag of niet.
+			Een voorbeeld van een application layer firewall is een mailserver die alleen luistert naar de SMTP-poort.	
+			Met behulp van proxy's wordt deze firewall geïmplementeerd.		
+			</p>
+			
+			<h4>Stateless firewall</h4>
+			
+			<p>Een stateless firewall behandelt elk pakketje apart, de firewall slaat tussentijds geen informatie op van de connecties die over de firewall lopen.
+			Aangezien dit grote beperkingen met zich meebrengt, zijn de meeste firewalls tegenwoordig stateful.
+			</p>
+			
+			<h4>Stateful firewall</h4>
+			
+			<p>Een stateful firewall houdt tussentijdse informatie bij van connecties die over de firewall lopen. 
+			Hierdoor is de firewall beter in staat onderscheid te maken tussen pakketjes die wel toegestaan en niet toegestaan mogen worden.
+			Als een stateless firewall FTP moet toestaan, dan zal daartoe verkeer op alle poorten moeten worden toegestaan. 
+			Een stateful firewall kan instemmen met het tijdelijk openen van de poort waarover de FTP-sessie plaatsvindt.
+			Tegenwoordig zijn packet filtering firewalls stateful. 
+			Soms zijn ze slechts stateful op TCP-niveau en missen ze de mogelijkheid om bijvoorbeeld het FTP-protocol toe te staan.
+			</p>
+			</section>
+			
+			<video width="15%" height="15%" controls>
+				<source src="firewall.mp4" type="video/mp4">
+			</video>
+			
+			<div class="footer">
+			<footer>Gemaakt door Maurice Tjan en Menno ter Voort</footer></div>
+		</body>
+	</html>
