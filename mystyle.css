@@ -75,7 +75,7 @@ body {			background-color: rgb(50, 50, 50);
 				top: 130px;
 				margin-left: 10px;
 				margin-right: 10px;
-				left: 645px;
+				text-align: center;
 				}
 
 .sparagraph {	color: white;
@@ -84,7 +84,7 @@ body {			background-color: rgb(50, 50, 50);
 				margin-left: 10px;
 				margin-right: 10px;
 				width: 100%;
-				left: 525px;
+				text-align: center;
 				}
 				
 .anoniemsurfenpic {	position: fixed;
